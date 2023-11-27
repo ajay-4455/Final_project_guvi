@@ -35,7 +35,7 @@ The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/higg
         - ROC-AUC Curve
 
 5. **Experimentation:**
-    - Repeat the experiments for different PCA component sizes (15, 20, 25, 30) to observe the impact on model performance
+    - Repeated the experiments for different PCA component sizes (15, 20, 25, 30) to observe the impact on model performance
 
 ## Project Structure
 
