@@ -8,6 +8,19 @@ This project focuses on the classification of Kannada digits using various machi
 
 The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/higgstachyon/kannada-mnist). It contains 60,000 images for training and 10,000 images for testing, each of size 28x28 pixels
 
+## Requirements
+
+Ensure you have the following Python libraries installed:
+
+- Python (version 3.7 or higher)
+- NumPy
+- pandas
+- sci-kit-learn
+- matplotlib
+
+
+**pip install numpy pandas matplotlib scikit-learn**
+
 ## Project Steps
 
 1. **Data Preparation:**
@@ -15,7 +28,7 @@ The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/higg
     - Normalize pixel values and flatten the images
 
 2. **Dimensionality Reduction:**
-    - Apply Principal Component Analysis (PCA) to reduce the dimensionality of the images to 10 components
+    - Apply Principal Component Analysis (PCA) to reduce the dimensionality of the images to 10 components initially then you can use different components sizes given below 
 
 3. **Model Training:**
     - Train the following machine learning models:
