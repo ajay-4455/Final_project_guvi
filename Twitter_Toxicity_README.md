@@ -6,6 +6,25 @@ This project focuses on detecting toxicity in Twitter data using machine learnin
 **Download the dataset from the following Kaggle Competition**
 [Toxic Tweets Dataset](https://www.kaggle.com/datasets/ashwiniyer176/toxic-tweets-dataset)
 
+
+## Requirements
+
+To run this project, you will need the following libraries installed:
+
+- Python (version 3.7 or higher)
+- pandas
+- numpy
+- re
+- textblob
+- nltk
+- scikit-learn
+- matplotlib
+
+You can install these libraries using the following command:
+
+**pip install pandas numpy re textblob nltk scikit-learn matplotlib**
+
+
 **Preprocessing**
 The preprocessing steps include:
 
