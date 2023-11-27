@@ -168,7 +168,7 @@ for model in models:
 # In[15]:
 
 
-#Predicting Toxicity Comparing Models with BoW and TF-IDF using DecisionTreeClassifier model you can add more models
+#Predicting Toxicity Comparing Models with BoW and TF-IDF using DecisionTreeClassifier model to see (you can add more models if required)
 
 
 import pandas as pd
@@ -187,7 +187,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, confusion_m
 
 # Read a sample of the data (adjust the sample size as needed)
 df = pd.read_csv(r"C:\Users\AJAYK\Downloads\FinalBalancedDataset.csv\FinalBalancedDataset.csv")
-df_sample = df.sample(n=10, random_state=42)  # Corrected line
+df_sample = df.sample(n=10, random_state=42) 
 
 # Other preprocessing setup
 my_stop_words = set(stopwords.words('english'))
@@ -212,11 +212,11 @@ for text in df_sample['tweet']:
 
 # Bag of Words
 count_vectorizer = CountVectorizer()
-bow_matrix = count_vectorizer.fit_transform(df_sample['tweet'])  # Use the entire set of cleaned tokens here
+bow_matrix = count_vectorizer.fit_transform(df_sample['tweet'])  # Useing the entire set of cleaned tokens here
 
 # TF-IDF
 tfidf_vectorizer = TfidfVectorizer()
-tfidf_matrix = tfidf_vectorizer.fit_transform(df_sample['tweet'])  # Use the entire set of cleaned tokens here
+tfidf_matrix = tfidf_vectorizer.fit_transform(df_sample['tweet'])  # Useing the entire set of cleaned tokens here
 
 # Align the labels with the corresponding matrix
 y = df_sample['Toxicity']  
@@ -240,14 +240,14 @@ for model in models:
     df_sample[f'Predicted_{type(model).__name__}_BoW'] = model.predict(bow_matrix)
     df_sample[f'Predicted_{type(model).__name__}_TFIDF'] = model.predict(tfidf_matrix)
 
-# Reset the index to start from 0
+# Resetting the index to start from 0
 df_sample = df_sample.reset_index(drop=True)  
 
-# Print the DataFrame with predicted values for rows 1 to 10
+# Printing the DataFrame with predicted values for rows 1 to 10
 df_sample.iloc[0:10] 
 
 
-# In[ ]:
+
 
 
 
