@@ -187,7 +187,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score, confusion_m
 
 # Read a sample of the data (adjust the sample size as needed)
 df = pd.read_csv(r"C:\Users\AJAYK\Downloads\FinalBalancedDataset.csv\FinalBalancedDataset.csv")
-df_sample = df.sample(n=10, random_state=42) 
+df_sample = df.sample(n=1000, random_state=42)  #To check
 
 # Other preprocessing setup
 my_stop_words = set(stopwords.words('english'))
