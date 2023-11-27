@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project focuses on the classification of Kannada digits using various machine learning models. The dataset used in this project is the Kannada-MNIST dataset, a handwritten digits dataset for the Kannada language
+This project focuses on the classification of Kannada digits using various machine-learning models. The dataset used in this project is the Kannada-MNIST dataset, a handwritten digits dataset for the Kannada language
 
 ## Dataset
 
@@ -40,7 +40,7 @@ The dataset can be downloaded from [Kaggle](https://www.kaggle.com/datasets/higg
 ## Project Structure
 
 - `data/`: Directory to store the dataset
-- `notebooks/`: Jupyter notebooks for each experiment with different PCA component sizes
-- `README.md`: Project overview 
+- `notebooks/`: Kannada_MNIST_Classification_project Jupyter notebooks for all experiments with different PCA component sizes in each cell 
+- `Kannada_MNIST_README.md`: Project overview 
 
 
